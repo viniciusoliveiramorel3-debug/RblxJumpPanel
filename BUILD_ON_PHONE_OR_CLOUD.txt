@@ -1,0 +1,19 @@
+Como tentar gerar o APK sem instalar Android Studio no celular
+
+Este ZIP agora inclui um fluxo automático do GitHub Actions. Você ainda precisa ter/entrar numa conta GitHub e enviar o projeto para um repositório.
+
+1. Baixe e extraia este ZIP.
+2. No navegador, abra https://github.com e entre/crie uma conta.
+3. Crie um repositório novo (por exemplo, RblxJumpPanel); deixe-o privado se preferir.
+4. Envie todos os arquivos e pastas extraídos do ZIP para a raiz do repositório. Importante: inclua a pasta oculta .github/workflows/android.yml.
+5. Abra a aba Actions do repositório e selecione "Build Android APK"; se não aparecer, abra "All workflows" ou faça um commit depois de habilitar Actions.
+6. Toque em "Run workflow" e aguarde terminar.
+7. Abra a execução concluída e baixe o artefato "RblxJumpPanel-debug-apk". Dentro estará app-debug.apk.
+
+Limitações importantes:
+- Não consegui executar nem validar a compilação neste ambiente.
+- O fluxo automático pode revelar erros de compilação; nesse caso, os logs precisam ser corrigidos.
+- O APK gerado será um APK debug do painel externo, não uma versão modificada do jogo.
+- Após instalar, Android pedirá permissão para sobreposição e você terá de ativar o serviço de acessibilidade manualmente.
+- O painel só envia um toque para o alvo que você posicionar sobre o botão de pulo original. Não é garantido que todos os jogos aceitem toques de acessibilidade.
+- Não envie chaves, senhas ou dados pessoais para o repositório.

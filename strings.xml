@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Rblx Jump Panel</string>
+    <string name="accessibility_description">Permite que o botão flutuante envie um toque único ao alvo de pulo configurado.</string>
+</resources>
